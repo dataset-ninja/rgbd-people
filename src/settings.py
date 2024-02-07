@@ -22,7 +22,7 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 ##################################
 LICENSE: License = License.CC_BY_NC_SA_4_0()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Surveillance()]
-CATEGORY: Category = Category.Surveillance()
+CATEGORY: Category = Category.Surveillance(extra=Category.Robotics())
 
 CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
