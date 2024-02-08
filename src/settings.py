@@ -13,25 +13,28 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "RGB-D Peoples"
-PROJECT_NAME_FULL: str = "RGB-D Peoples Dataset"
+PROJECT_NAME: str = "RGB-D People Dataset"
+PROJECT_NAME_FULL: str = "RGB-D People Dataset"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = License.CC_BY_NC_SA_4_0()
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Surveillance()]
+LICENSE: License = License.CC_BY_NC_SA_3_0()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [
+    Industry.Surveillance(),
+    Industry.Robotics(),
+]
 CATEGORY: Category = Category.Surveillance(extra=Category.Robotics())
 
-CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
+CV_TASKS: List[CVTask] = [CVTask.ObjectDetection(), CVTask.MonocularDepthEstimation()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
 
 RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = 2023
 
-HOMEPAGE_URL: str = "https://www.kaggle.com/datasets/bmanikan/rgbd-peoples-dataset"
+HOMEPAGE_URL: str = "http://www2.informatik.uni-freiburg.de/~spinello/RGBD-dataset.html"
 # e.g. "https://some.com/dataset/homepage"
 
 PREVIEW_IMAGE_ID: int = 13315441
@@ -44,7 +47,7 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/rgbd-people"
 ### * Optional after uploading ###
 ##################################
 DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = (
-    "https://www.kaggle.com/datasets/bmanikan/rgbd-peoples-dataset/download?datasetVersionNumber=1"
+    "http://www.informatik.uni-freiburg.de/~spinello/sw/rgbd_people_unihall.tar.gz"
 )
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
@@ -53,9 +56,11 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
-PAPER: Optional[Union[str, List[str], Dict[str, str]]] = (
-    "https://www.researchgate.net/publication/221066268_People_tracking_in_RGB-D_Data_with_on-line_boosted_target_models"
-)
+PAPER: Optional[Union[str, List[str], Dict[str, str]]] = {
+    "Kaggle": "https://www.kaggle.com/datasets/bmanikan/rgbd-peoples-dataset",
+    "Research Paper1": "https://www.researchgate.net/publication/221064353_People_detection_in_RGB-D_data",
+    "Research Paper2": "https://www.researchgate.net/publication/221066268_People_tracking_in_RGB-D_Data_with_on-line_boosted_target_models",
+}
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
@@ -71,7 +76,7 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = (
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
     "camera positions": ["left camera", "center camera", "right camera"],
-    "visibilities": ["hidden", "fully visible", "partially visible"],
+    "visibility in the depth image": ["hidden", "fully visible", "partially visible"],
     "__POSTTEXT__": "Additionally, every image contains information about ***timestamp*** and ***track***. Moreover, images are grouped by ***seq***",
 }
 TAGS: Optional[List[str]] = None
