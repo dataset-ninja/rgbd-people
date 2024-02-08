@@ -1,3 +1,3 @@
-# RGB-D Peoples Dataset
+# RGB-D People Dataset
 
-RGB-D Peoples is a dataset for object detection task.
+RGB-D People Dataset is a dataset for object detection and monocular depth estimation tasks.

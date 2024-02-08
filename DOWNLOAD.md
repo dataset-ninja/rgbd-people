@@ -1,4 +1,4 @@
-Dataset **RGB-D Peoples** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
+Dataset **RGB-D People Dataset** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
  [Download](Set 'HIDE_DATASET=False' to generate download link)
 
@@ -11,8 +11,8 @@ pip install --upgrade dataset-tools
 ``` python
 import dataset_tools as dtools
 
-dtools.download(dataset='RGB-D Peoples', dst_dir='~/dataset-ninja/')
+dtools.download(dataset='RGB-D People Dataset', dst_dir='~/dataset-ninja/')
 ```
 Make sure not to overlook the [python code example](https://developer.supervisely.com/getting-started/python-sdk-tutorials/iterate-over-a-local-project) available on the Supervisely Developer Portal. It will give you a clear idea of how to effortlessly work with the downloaded dataset.
 
-The data in original format can be [downloaded here](https://www.kaggle.com/datasets/bmanikan/rgbd-peoples-dataset/download?datasetVersionNumber=1).
+The data in original format can be [downloaded here](http://www.informatik.uni-freiburg.de/~spinello/sw/rgbd_people_unihall.tar.gz).
