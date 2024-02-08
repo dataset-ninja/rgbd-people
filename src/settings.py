@@ -54,7 +54,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
 PAPER: Optional[Union[str, List[str], Dict[str, str]]] = (
-    "file:///home/alex/Downloads/luberIROS11.pdf"
+    "https://www.researchgate.net/publication/221066268_People_tracking_in_RGB-D_Data_with_on-line_boosted_target_models"
 )
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
@@ -70,8 +70,8 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = (
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
-    "camera position": ["left camera", "center camera", "right camera"],
-    "visibility": ["hidden", "fully visible", "partially visible"],
+    "camera positions": ["left camera", "center camera", "right camera"],
+    "visibilities": ["hidden", "fully visible", "partially visible"],
     "__POSTTEXT__": "Additionally, every image contains information about ***timestamp*** and ***track***. Moreover, images are grouped by ***seq***",
 }
 TAGS: Optional[List[str]] = None
