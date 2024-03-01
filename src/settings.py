@@ -58,8 +58,8 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # Use dict key to specify name for a button
 PAPER: Optional[Union[str, List[str], Dict[str, str]]] = {
     "Kaggle": "https://www.kaggle.com/datasets/bmanikan/rgbd-peoples-dataset",
-    "Research Paper1": "https://www.researchgate.net/publication/221064353_People_detection_in_RGB-D_data",
-    "Research Paper2": "https://www.researchgate.net/publication/221066268_People_tracking_in_RGB-D_Data_with_on-line_boosted_target_models",
+    "Research Paper 1": "https://www.researchgate.net/publication/221064353_People_detection_in_RGB-D_data",
+    "Research Paper 2": "https://www.researchgate.net/publication/221066268_People_tracking_in_RGB-D_Data_with_on-line_boosted_target_models",
 }
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
