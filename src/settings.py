@@ -79,7 +79,7 @@ SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
     "visibility in the depth image": ["hidden", "fully visible", "partially visible"],
     "__POSTTEXT__": "Additionally, every image contains information about ***timestamp*** and ***track***. Moreover, images are grouped by ***seq***",
 }
-TAGS: Optional[List[str]] = None
+TAGS: Optional[List[str]] = ['multi-view']
 
 
 SECTION_EXPLORE_CUSTOM_DATASETS: Optional[List[str]] = None
