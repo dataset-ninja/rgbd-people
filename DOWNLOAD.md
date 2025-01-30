@@ -1,6 +1,6 @@
 Dataset **RGB-D People Dataset** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://www.dropbox.com/scl/fi/wj98nwjvmf9z63htq8ppo/rgbd-people-dataset-DatasetNinja.tar?rlkey=zvjxt9f73ir6hrq5ies2wnqyq&dl=1)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzM0NDJfUkdCLUQgUGVvcGxlIERhdGFzZXQvcmdiZC1wZW9wbGUtZGF0YXNldC1EYXRhc2V0TmluamEudGFyIiwgInNpZyI6ICJwRVZCNERFcDZ5aUpYRXNiUWZIVWVzSHpOMDFHU2JIcllReFB1eTA1UWtVPSJ9)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
